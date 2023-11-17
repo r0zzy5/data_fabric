@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Debug{% endblock %}
+
+{% block content %}
+{% for txt in to_print %}
+<p>{{txt}}</p>
+{% endfor %}
+{% endblock %}

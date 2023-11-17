@@ -1,0 +1,19 @@
+{
+    "schema": {
+        "targetLatitude": {
+            "type": "number"
+        },
+        "targetLongitude": {
+            "type": "number"
+        },
+        "targetAltitude": {
+            "type": "number"
+        },
+        "targetMach": {
+            "type": "number"
+        },
+        "targetHeading": {
+            "type": "number"
+        }
+    }
+}

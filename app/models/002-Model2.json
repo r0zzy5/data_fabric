@@ -1,0 +1,22 @@
+{
+    "schema": {
+        "targetPositionNorth": {
+            "type": "number"
+        },
+        "targetPositionEast": {
+            "type": "number"
+        },
+        "targetPositionDown": {
+            "type": "number"
+        },
+        "targetVelocityNorth": {
+            "type": "number"
+        },
+        "targetVelocityEast": {
+            "type": "number"
+        },
+        "targetVelocityDown": {
+            "type": "number"
+        }
+    }
+}

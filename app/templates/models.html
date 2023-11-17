@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Models{% endblock %}
+
+{% block content %}
+  <ul>
+  {% for model in models %}
+    <li><a href="/model/{{model.id}}">{{model.name}}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
