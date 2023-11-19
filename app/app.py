@@ -17,7 +17,7 @@ def models():
 def model(id):
     if request.method == 'POST':
         scen = json.dumps(request.form)
-        cs = hashlib.md5(y.encode("utf-8")).hexdigest()
+        cs = hashlib.md5(scen.encode("utf-8")).hexdigest()
         to_print = [scen,cs]
         return render_template('debug.html', to_print=to_print)
     files = glob.glob(f"models/{id:0>3}-*.json")
