@@ -3,9 +3,10 @@
 {% block title %}Models{% endblock %}
 
 {% block content %}
-  <ul>
-  {% for model in models %}
-    <li><a href="/model/{{model.id}}">{{model.name}}</a></li>
-  {% endfor %}
-  </ul>
+        <h1>Models</h1>
+        <ul>
+        {% for model in models %}
+            <li><a href="/model/{{model.id}}">{{model.name}}</a></li>
+        {% endfor %}
+        </ul>
 {% endblock %}
