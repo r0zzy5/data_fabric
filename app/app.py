@@ -50,12 +50,12 @@ def model(id):
         collection = db[model]
         
         # query mongo database to see if this run has been previously performed using the model name and scenario hash
-        check = collection.find_one({'model':model, 'hash':cs})
+        check = collection.find_one({'hash':cs})
 
         # if nothing is found, this is a new run so insert in to the database
         to_print = [scen, cs]
         if not check:
-            meta = {'model':model, 'hash':cs, 'scenario':request.form}
+            meta = {'hash':cs, 'scenario':request.form}
             collection.insert_one(meta)
             to_print = ['New Run'] + to_print
         else:
