@@ -1,22 +1,33 @@
 {
     "schema": {
+        "targetType": {
+            "type": "string",
+            "enum": ["A","B","C"],
+            "default": "A"
+        },
         "targetPositionNorth": {
-            "type": "number"
+            "type": "number",
+            "default": "10000"
         },
         "targetPositionEast": {
-            "type": "number"
+            "type": "number",
+            "default": "0"
         },
         "targetPositionDown": {
-            "type": "number"
+            "type": "number",
+            "default": "-5000"
         },
         "targetVelocityNorth": {
-            "type": "number"
+            "type": "number",
+            "default": "225"
         },
         "targetVelocityEast": {
-            "type": "number"
+            "type": "number",
+            "default": "0"
         },
         "targetVelocityDown": {
-            "type": "number"
+            "type": "number",
+            "default": "0"
         }
     }
 }

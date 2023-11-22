@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: dev
+    volumes:
+      - .:/workspace
+    # Overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    depends_on:
+       - db
+  db:
+    image: mongo:7.0.3
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - './mongodb_data:/data/db'

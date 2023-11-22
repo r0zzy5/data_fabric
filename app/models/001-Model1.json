@@ -1,19 +1,29 @@
 {
     "schema": {
+        "targetType": {
+            "type": "string",
+            "enum": ["A","B","C"],
+            "default": "A"
+        },
         "targetLatitude": {
-            "type": "number"
+            "type": "number",
+            "default": "0"
         },
         "targetLongitude": {
-            "type": "number"
+            "type": "number",
+            "default": "0"
         },
         "targetAltitude": {
-            "type": "number"
+            "type": "number",
+            "default": "500"
         },
         "targetMach": {
-            "type": "number"
+            "type": "number",
+            "default": "0.75"
         },
         "targetHeading": {
-            "type": "number"
+            "type": "number",
+            "default": "0"
         }
     }
 }
